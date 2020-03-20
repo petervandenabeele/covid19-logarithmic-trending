@@ -19,10 +19,12 @@ in different European countries (particularly The Netherlands).
 ## Why
 
 The reason for these graphs are:
-* number of confirmed cases are by definition an underestimation and are dependent on testing _policy_ !
-* number of hospitalisations, ICU, breathing apparatus is not dependent on policy and also has a much harder real-world impact
+
+* number of _confirmed cases_ are by definition an underestimation and are dependent on testing _policy_ !
+* number of hospitalisations, ICU, breathing apparatus is far less dependent on policy and also has a much harder real-world impact.
 
 The graphs are _logarithmic_ because:
+
 * initially, there is exponential growth ("viral")
 * what is the rate of growth (e.g. doubling time) ?
 * plotting on _log_ scale shows this as a _straight line_
@@ -31,4 +33,5 @@ The graphs are _logarithmic_ because:
 
 I am very curious (and worried also) about how the different approach of "hammer and dance" vs. "herd immunity" will affect these numbers and potentially overload of the medical system.
 
-Maybe the trendline can be a little bit of an earlier indicator for the next days ??
+Maybe the trendline can be somewhat of an earlier indicator for the next days ??
+The trendline *IS NOT A PREDICTION* !
