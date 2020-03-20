@@ -35,8 +35,13 @@ The graphs are _logarithmic_ because:
 
 I am very curious (and worried also) about how the different approach of "hammer and dance" vs. "herd immunity" will affect these numbers and potentially overload of the medical system.
 
-Maybe the trendline can be somewhat of an earlier indicator for the next days ??
-The trendline *IS NOT A PREDICTION* !
+## CAVEAT: About the *trendline*
+
+The trendline *IS NOT A PREDICTION*. It is just a trendline that reasonably well matches the gentle bending down of the curve. But maybe (or probably !) there are and will be external factors that will change the shape of the trendline in the future.
+
+I _hope_ the trendline can be somewhat of a useful indicator for the next days ?? But, "hope is not a strategy".
+
+Also, I am not plotting the number of deceased people here. That graph shows a much faster growth!
 
 ## Data source
 
