@@ -37,7 +37,7 @@ I am very curious (and worried also) about how the different approach of "hammer
 
 ## CAVEAT: About the *trendline*
 
-The trendline *IS NOT A PREDICTION*. It is just a trendline that reasonably well matches the gentle bending down of the curve. But maybe (or probably !) there are and will be external factors that will change the shape of the trendline in the future.
+The trendline *IS NOT A PREDICTION*. It is just a trendline that reasonably well matches the bending of the curve (on 20 March in Belgium, still seems to bend down slowly). But obviosuly there are and will be many (intrinsic and *external*) factors that will change the shape of the trendline in the future. And also, a 2 order polynomial is way too simple to describe the complex behavior for anything more then a short extrapolation.
 
 I _hope_ the trendline can be somewhat of a useful indicator for the next days ?? But, "hope is not a strategy".
 
