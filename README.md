@@ -1,6 +1,8 @@
 # covid19-logarithmic-trending
 
-Plots of covid19 number on logarithmic scale and trending
+Plots of covid19 number on logarithmic scale and trending.
+
+![covid19-log-hospital-admissions-belgium](./images/covid19-log-belgium-2020-03-20.png "covid19 log hospital admissions belgium")
 
 First Notebook is on https://colab.research.google.com/drive/1O7kH5sxu36atNYDavtEuw4Vw8Wq0SpUW#scrollTo=SER7lP_Rcc39
 
