@@ -1,5 +1,7 @@
 # Plots of covid19 hospitalisations on logarithmic scale and trending.
 
+## Belgium
+
 ![covid19-log-hospital-admissions-belgium](./images/covid19-log-belgium-2020-03-20.png "covid19 log hospital admissions belgium")
 
 First Notebook is on https://colab.research.google.com/drive/1O7kH5sxu36atNYDavtEuw4Vw8Wq0SpUW#scrollTo=SER7lP_Rcc39
@@ -35,3 +37,7 @@ I am very curious (and worried also) about how the different approach of "hammer
 
 Maybe the trendline can be somewhat of an earlier indicator for the next days ??
 The trendline *IS NOT A PREDICTION* !
+
+## Data source
+
+The source of the data is the daily official press release around 11:00 am that gives these numbers for Belgium.
