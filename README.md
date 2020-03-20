@@ -41,3 +41,9 @@ The trendline *IS NOT A PREDICTION* !
 ## Data source
 
 The source of the data is the daily official press release around 11:00 am that gives these numbers for Belgium.
+
+## Contributors
+
+* The idea was started by Peter Vandenabeele (https://twitter.com/peter_v), for the motivations written above.
+* The graph lay-out was improved by and useful discussions with Kris Peeters (https://twitter.com/peeterskris)
+* A nicer version of the graph was made by Maarten Lambrechts (https://twitter.com/maartenzam)
