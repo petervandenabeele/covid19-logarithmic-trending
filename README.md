@@ -8,11 +8,13 @@ First plots of these data are on https://twitter.com/peter_v around 18, 19, 20 M
 
 Please collaborate with comments, PR, forked Notebooks.
 
-Most needed now is: data on:
+Most needed now is data on:
+
 * hospitalisations
 * ICU
 * breathing apparatus
-in different European countries.
+
+in different European countries (particularly The Netherlands).
 
 ## Why
 
