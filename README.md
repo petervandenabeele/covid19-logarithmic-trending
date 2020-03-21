@@ -35,7 +35,7 @@ I am very curious (and worried also) about how the different approach the Nether
 
 ## CAVEAT: About the *trendline*
 
-The trendline *IS NOT A PREDICTION*. It is just a trendline that reasonably well matches the data. I am using only the most recent 7 data points (1 week), because I presume (??) the dynamic will change over time, as a result of changing social behaviors and rules imposed by governments. 
+The trendline *IS NOT A PREDICTION*. It is just a trendline that reasonably well matches the data. I am using only the most recent 7 data points (1 week), because the dynamics will change over time, as a result of changing social behaviors and because of rules imposed by governments.
 
 Again, for clarity, both the 1-order (LINEAR) polynomials and the 2-order (QUADRATIC) polynomials are way too simple to describe the complex behavior for anything more then a short extrapolation. So, do not use this as a prediction ... maybe use as a possible trend for the next days.
 
