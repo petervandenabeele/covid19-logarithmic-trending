@@ -74,7 +74,7 @@ print(f"Trendline QUADRATIC numbers: {[int(pow(2, x)) for x in log2_hosp_trend_2
 figure(num=1, figsize=(10, 8))
 plt.yscale("log")
 
-values = [10, 25, 50, 100, 200, 400, 600, 800, 1000, 1500, 2000]
+values = [10, 25, 50, 100, 200, 400, 600, 800, 1000, 1500, 2000, 2500, 3000, 3500, 4000]
 plt.yticks(values, ['%d' % val for val in values])
 
 plt.plot(X_, trend_1, color = 'green', dashes=[2, 4], label="hospitlisations trendline LINEAR")
@@ -85,6 +85,6 @@ plt.plot(day_of_march_ICU, ICU, 's-', label="ICU")
 
 plt.xlabel("day of March")
 plt.ylabel("Total numbers")
-plt.title(f"{country} hospitalisation, ICU; \n 21 March The trendline IS NOT A PREDICTION ! ")
+plt.title(f"{country} hospitalisation, ICU on 21 March\nThe trendline IS NOT A PREDICTION !")
 plt.legend()
 plt.show()
