@@ -34,6 +34,8 @@ from sklearn.linear_model import LinearRegression
 X = [[x] for x in day_of_march]
 X_ = [[x] for x in day_of_march_future]
 y = log2_hosp
+trendline_dates = [[21],[22],[23],[24],[25]]
+#trendline_dates = X_ # use this to see all trendline values, also in the past
 
 poly_1 = PolynomialFeatures(degree = 1)
 X_poly_1 = poly_1.fit_transform(X)
@@ -42,10 +44,7 @@ poly_1.fit(X_poly_1, y)
 lin2_1 = LinearRegression()
 lin2_1.fit(X_poly_1, y)
 
-trend_1 = [pow(2, x) for x in lin2_1.predict(poly.fit_transform(X_))]
-
-trendline_dates = [[21],[22],[23],[24],[25]]
-#trendline_dates = X_ # use this to see all trendline values, also in the past
+trend_1 = [pow(2, x) for x in lin2_1.predict(poly_1.fit_transform(X_))]
 
 log2_hosp_trend_1 = lin2_1.predict(poly_1.fit_transform(trendline_dates))
 print(f"Days of March:     {trendline_dates}")
@@ -66,6 +65,6 @@ plt.plot(day_of_march, ICU, 's-', label="ICU")
 
 plt.xlabel("day of March")
 plt.ylabel("Total numbers")
-plt.title("BELGIUM hospitalisation, ICU; \n The trendline IS NOT A PREDICTION ! ")
+plt.title("BELGIUM hospitalisation, ICU; \n 22 March The trendline IS NOT A PREDICTION ! ")
 plt.legend()
 plt.show()
