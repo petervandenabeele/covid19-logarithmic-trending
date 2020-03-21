@@ -1,21 +1,27 @@
-# WORK IN PROCESS BELGIUM 21 March 2020
+# WORK IN PROCESS NETHERLANDS 21 March 2020
 # LINEAR + QUADRATIC trend line
 # Copyright Peter Vandenabeele and Kris Peeters
 # Licensed under BSD license (see below)
+# Sources:
+# https://www.rivm.nl/nieuws/actuele-informatie-over-coronavirus
+# ICU : NOS drawing
+# 21 March : https://www.nu.nl/coronavirus/6036016/flinke-stijging-ziekenhuisopnamen-in-nederland.html
+# Correction on 21 March of the number of ICU admissions
+
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 from math import log, exp, pow
 import numpy as np
 import pandas as pd
-
+ 
 # Set-up the data
-country = "BELGIUM"
+country = "NETHERLANDS"
 day_of_march  = [14, 15, 16, 17, 18, 19, 20, 21]
-day_of_march_ICU  = day_of_march
+day_of_march_ICU  = [16, 17, 18, 19, 20, 21]
 
-hosp = [97, 163, 252, 361, 496, 634, 837, 1089]
-ICU = [24, 33, 53, 79, 100, 130, 164, 238]
-deceased = [4, 4, 5, 10, 14, 21, 37, 67]
+hosp = [136, 162, 205, 314, 408, 489, 643, 836]
+ICU = [96, 135, 178, 210, 281, 354]
+deceased = [12, 20, 24, 43, 58, 76, 106, 136]
 
 log2_hosp = [log(x, 2) for x in hosp]
 log2_ICU = [log(x, 2) for x in ICU]
