@@ -3,6 +3,7 @@
 # https://www.rivm.nl/nieuws/actuele-informatie-over-coronavirus
 # ICU : NOS drawing
 # 21 March : https://www.nu.nl/coronavirus/6036016/flinke-stijging-ziekenhuisopnamen-in-nederland.html 
+# Correction on 21 March of the number of ICU admissions
 
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
@@ -12,10 +13,10 @@ import pandas as pd
  
 day_of_march  = [14, 15, 16, 17, 18, 19, 20, 21]
 day_of_march_ICU  = [16, 17, 18, 19, 20, 21]
-day_of_march_future = [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+day_of_march_future = [14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
 
 hosp = [136, 162, 205, 314, 408, 489, 643, 836]
-ICU = [96, 135, 178, 210, 281, 293]
+ICU = [96, 135, 178, 210, 281, 354]
 deceased = [12, 20, 24, 43, 58, 76, 106, 136]
 
 log2_hosp = [log(x, 2) for x in hosp if x]
@@ -56,7 +57,7 @@ trend = [pow(2, x) for x in lin2.predict(poly.fit_transform(X_))]
 plt.plot(X_, trend, color = 'blue', dashes=[2, 4], label="hospitlisations trendline")
 
 # trendline_dates = X_ # use this to see all trendline values, also in the past
-trendline_dates = [[21],[22],[23],[24],[25]]
+trendline_dates = [[21],[22],[23]]
 
 log2_hosp_near_max = lin2.predict(poly.fit_transform(trendline_dates))
 print(f"Days of March:     {trendline_dates}")
