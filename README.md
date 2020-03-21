@@ -1,6 +1,6 @@
 # Plots of covid19 hospitalisations on logarithmic scale and trending.
 
-First Notebook is on https://colab.research.google.com/drive/1O7kH5sxu36atNYDavtEuw4Vw8Wq0SpUW#scrollTo=SER7lP_Rcc39
+First Notebook is on https://colab.research.google.com/drive/1O7kH5sxu36atNYDavtEuw4Vw8Wq0SpUW
 
 First plots of these data are on https://twitter.com/peter_v around 18, 19, 20 March 2020. Some of the initial plots with only QUADRATIC trend lines where far too optimistic for the trendline :-/ . I received feedback to not show trendlines or at least use LINEAR trendlines.
 
