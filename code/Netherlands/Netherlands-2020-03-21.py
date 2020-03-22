@@ -2,7 +2,7 @@
 # Sources:
 # https://www.rivm.nl/nieuws/actuele-informatie-over-coronavirus
 # ICU : NOS drawing
-# 21 March : https://www.nu.nl/coronavirus/6036016/flinke-stijging-ziekenhuisopnamen-in-nederland.html 
+# 21 March : https://www.nu.nl/coronavirus/6036016/flinke-stijging-ziekenhuisopnamen-in-nederland.html
 # Correction on 21 March of the number of ICU admissions
 
 import matplotlib.pyplot as plt
@@ -10,7 +10,7 @@ from matplotlib.pyplot import figure
 from math import log, exp, pow
 import numpy as np
 import pandas as pd
- 
+
 day_of_march  = [14, 15, 16, 17, 18, 19, 20, 21]
 day_of_march_ICU  = [16, 17, 18, 19, 20, 21]
 day_of_march_future = [14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
@@ -29,21 +29,21 @@ average_last_log2_diff = (last_log2_diff_hosp+last_log2_diff_ICU)/2
 print("Average doubling days = %.2f" % (1/average_last_log2_diff))
 
 # Fitting Polynomial Regression to the dataset
-from sklearn.preprocessing import PolynomialFeatures 
-from sklearn.linear_model import LinearRegression 
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.linear_model import LinearRegression
 
 X = [[x] for x in day_of_march]
 X_ = [[x] for x in day_of_march_future]
 y = log2_hosp
 
-poly = PolynomialFeatures(degree = 2) 
+poly = PolynomialFeatures(degree = 2)
 X_poly = poly.fit_transform(X)
-  
-poly.fit(X_poly, y) 
-lin2 = LinearRegression() 
+
+poly.fit(X_poly, y)
+lin2 = LinearRegression()
 lin2.fit(X_poly, y)
 
-figure(num=1, figsize=(10, 8)) 
+figure(num=1, figsize=(10, 8))
 plt.yscale("log")
 
 values = [10, 25, 50, 100, 200, 400, 600, 800, 1000, 1500, 2000, 2500, 3000]
@@ -67,4 +67,5 @@ plt.xlabel("day of March")
 plt.ylabel("Total numbers")
 plt.title("NETHERLANDS hospitalisation, ICU; \n The trendline IS NOT A PREDICTION ! ")
 plt.legend()
+plt.grid()
 plt.show()

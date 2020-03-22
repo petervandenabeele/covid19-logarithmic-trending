@@ -13,7 +13,7 @@ from matplotlib.pyplot import figure
 from math import log, exp, pow
 import numpy as np
 import pandas as pd
- 
+
 # Set-up the data
 country = "NETHERLANDS"
 day_of_march  = [14, 15, 16, 17, 18, 19, 20, 21]
@@ -93,4 +93,5 @@ plt.xlabel("day of March")
 plt.ylabel("Total numbers")
 plt.title(f"{country} hospitalisation, ICU on 21 March\nThe trendline IS NOT A PREDICTION ! ")
 plt.legend()
+plt.grid()
 plt.show()
