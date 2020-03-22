@@ -22,11 +22,11 @@ log2_hosp = [log(x, 2) for x in hosp]
 log2_ICU = [log(x, 2) for x in ICU]
 log2_deceased = [log(x, 2) for x in deceased]
 
-# Average "doubling" time over last 2 data points
-last_log2_diff_hosp = log2_hosp[-1] - log2_hosp[-2]
-last_log2_diff_ICU = log2_ICU[-1] - log2_ICU[-2]
-average_last_log2_diff = (last_log2_diff_hosp + last_log2_diff_ICU)/2
-print("Average doubling days = %.2f" % (1/average_last_log2_diff))
+# Average "doubling" time over last 2 days (to average out daily noise)
+last_log2_diff_hosp = log2_hosp[-1] - log2_hosp[-3]
+last_log2_diff_ICU = log2_ICU[-1] - log2_ICU[-3]
+print("Hospitalisations doubling days = %.2f" % (2/last_log2_diff_hosp))
+print("ICU admissions   doubling days = %.2f" % (2/last_log2_diff_ICU))
 
 
 # Fitting Polynomial Regression to the dataset
@@ -81,7 +81,7 @@ plt.yticks(values, ['%d' % val for val in values])
 plt.plot(X_, trend_1, color = 'green', dashes=[2, 4], label="hospitlisations trendline LINEAR")
 plt.plot(X_, trend_2, color = 'gray', dashes=[2, 4], label="hospitlisations trendline QUADRATIC")
 plt.plot(day_of_march, hosp, 's-', label="hospitalisations")
-plt.plot(day_of_march_ICU, ICU, 's-', label="ICU")
+plt.plot(day_of_march_ICU, ICU, 's-', label="ICU admissions")
 #plt.plot(day_of_march, deceased, 's-', label="deceased")
 
 plt.xlabel("day of March")
