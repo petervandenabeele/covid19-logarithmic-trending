@@ -83,8 +83,8 @@ plt.yscale("log")
 values = [10, 25, 50, 100, 200, 400, 600, 800, 1000, 1500, 2000, 2500, 3000, 3500, 4000]
 plt.yticks(values, ['%d' % val for val in values])
 
-plt.plot(X_, trend_1, color = 'green', dashes=[2, 4], label="hospitlisations trendline LINEAR")
-plt.plot(X_, trend_2, color = 'gray', dashes=[2, 4], label="hospitlisations trendline QUADRATIC")
+plt.plot(X_, trend_1, color = 'green', dashes=[2, 4], label="hospitalisations trendline LINEAR")
+plt.plot(X_, trend_2, color = 'gray', dashes=[2, 4], label="hospitalisations trendline QUADRATIC")
 plt.plot(day_of_march, hosp, 's-', label="hospitalisations")
 plt.plot(day_of_march_ICU, ICU, 's-', label="ICU")
 #plt.plot(day_of_march, deceased, 's-', label="deceased")
