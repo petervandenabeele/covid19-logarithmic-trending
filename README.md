@@ -18,7 +18,7 @@ Please collaborate with comments, PR, forked Notebooks.
 
 ## Why ?
 
-The reason for these graphs are:
+The reasons for these graphs are:
 
 * number of _confirmed cases_ are by definition an underestimation and are dependent on testing _policy_ !
 * number of hospitalisations and ICU admissions is far less dependent on policy and also has a much harder real-world impact.
