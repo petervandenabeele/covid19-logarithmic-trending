@@ -1,4 +1,4 @@
-# WORK IN PROCESS BELGIUM 21 March 2020
+# BELGIUM 21 March 2020
 # LINEAR + QUADRATIC trend line
 # Copyright Peter Vandenabeele and Kris Peeters
 # Licensed under BSD license (see below)
