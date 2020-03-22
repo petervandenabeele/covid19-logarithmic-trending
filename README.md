@@ -8,7 +8,7 @@ As a compromise, I am now showing LINEAR and QUADRATIC trend lines, based on the
 
 ## Belgium
 
-![covid19-log-hospital-admissions-belgium](./images/covid19-log-belgium-2020-03-21-LQ.png "covid19 log hospital admissions belgium")
+![covid19-log-hospital-admissions-belgium](./images/covid19-log-belgium-2020-03-22.png "covid19 log hospital admissions belgium")
 
 ## Netherlands
 
@@ -54,4 +54,5 @@ For Netherlands, I mention some sources in the /data directory. Mainly the NOS a
 * The idea was started by Peter Vandenabeele (https://twitter.com/peter_v), for the motivations written above.
 * The graph lay-out was improved by and useful discussions with Kris Peeters (https://twitter.com/peeterskris)
 * A nicer version of the graph was made by Maarten Lambrechts (https://twitter.com/maartenzam)
-* Interesting feedback to use LINEAR trend line (or none!) was received from Arnout Devos, Pierre DB and Kris Peeters
+* Interesting feedback to use LINEAR trend line (or none!) was received from Arnout Devos (https://github.com/ArnoutDevos), Pierre DB and Kris Peeters
+* Pull Request for grid lines by Arnout Devos (https://github.com/ArnoutDevos)
