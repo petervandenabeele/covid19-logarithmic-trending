@@ -88,10 +88,10 @@ plt.yticks(values, ['%d' % val for val in values])
 
 plt.plot(X_, trend_1, color = 'green', dashes=[2, 4], label="hospitlisations trendline LINEAR")
 plt.plot(X_, trend_2, color = 'gray', dashes=[2, 4], label="hospitlisations trendline QUADRATIC")
-plt.plot(day_of_march, hosp_current, 's-', label="hospitalisations CURRENT")
-plt.plot(day_of_march_ICU, ICU, 's-', label="ICU admissions")
-plt.plot(day_of_march, deceased, 's-', label="deceased")
-plt.plot(day_of_march, hosp_admitted, 's-', label="hospitalisation ADMITTED")
+plt.plot(day_of_march, hosp_current, 's-', color = 'gray', label="hospitalisations CURRENT")
+plt.plot(day_of_march, hosp_admitted, 's-', color = 'C0', label="hospitalisation ADMITTED")
+plt.plot(day_of_march_ICU, ICU, 's-', color = 'C1', label="ICU admissions")
+plt.plot(day_of_march, deceased, 's-', color = 'C2', label="deceased")
 
 
 plt.xlabel("day of March")
