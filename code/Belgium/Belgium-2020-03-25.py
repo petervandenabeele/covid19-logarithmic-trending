@@ -3,6 +3,10 @@
 # Copyright Peter Vandenabeele and Kris Peeters
 # Licensed under BSD license (see below)
 
+# UPDATE: now plotting hospitalisations as
+# * ADMITTED: all patients that WHERE admitted
+# * CURRENT: ADMITTED minus DISCHARGED
+
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 from math import log, exp, pow
@@ -11,16 +15,19 @@ import pandas as pd
 
 # Set-up the data
 country = "BELGIUM"
-day_of_march  = [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+
+day_of_march  =   [14,  15,  16,  17,  18,  19,   20,   21,   22,   23,   24,   25]
+hosp_discharged = [ 1,   1,   1,  14,  31, 155,  240,  298,  340,  350,  410,  525]
+hosp_current =    [97, 163, 252, 361, 496, 634,  837, 1089, 1380, 1643, 1859, 2152]
+hosp_admitted =   [98, 164, 253, 372, 527, 789, 1077, 1387, 1720, 1993, 2269, 2677] # calculated
+ICU =             [24,  33,  53,  79, 100, 130,  164,  238,  290,  322,  381,  474]
+deceased =        [ 4,   4,   5,  10,  14,  21,   37,   67,   75,   88,  122,  178]
+
 day_of_march_ICU  = day_of_march
 current_day = day_of_march[-1]
 
-hosp = [97, 163, 252, 361, 496, 634, 837, 1089, 1380, 1643, 1859, 2152]
-ICU = [24, 33, 53, 79, 100, 130, 164, 238, 290, 322, 381, 474]
-deceased = [4, 4, 5, 10, 14, 21, 37, 67, 75, 88, 122, 178]
-
-log2_hosp = [log(x, 2) for x in hosp]
-log2_ICU = [log(x, 2) for x in ICU]
+log2_hosp = [log(x, 2) for x in hosp_admitted]
+log2_ICU =  [log(x, 2) for x in ICU]
 log2_deceased = [log(x, 2) for x in deceased]
 
 # Average "doubling" time over last 2 days (to average out daily noise)
@@ -81,13 +88,15 @@ plt.yticks(values, ['%d' % val for val in values])
 
 plt.plot(X_, trend_1, color = 'green', dashes=[2, 4], label="hospitlisations trendline LINEAR")
 plt.plot(X_, trend_2, color = 'gray', dashes=[2, 4], label="hospitlisations trendline QUADRATIC")
-plt.plot(day_of_march, hosp, 's-', label="hospitalisations")
+plt.plot(day_of_march, hosp_current, 's-', label="hospitalisations CURRENT")
 plt.plot(day_of_march_ICU, ICU, 's-', label="ICU admissions")
 plt.plot(day_of_march, deceased, 's-', label="deceased")
+plt.plot(day_of_march, hosp_admitted, 's-', label="hospitalisation ADMITTED")
+
 
 plt.xlabel("day of March")
 plt.ylabel("Total numbers")
-plt.title(f"{country} hospitalisation, ICU, deceased on {current_day} March\nThe trendlines ARE NOT PREDICTIONS ! ")
+plt.title(f"NEW VERSION: hospitalisations that WHERE admitted and current\n{country} hosp admitted and current, ICU, deceased on {current_day} March\nThe trendlines ARE NOT PREDICTIONS ! ")
 plt.legend()
 plt.grid()
 plt.show()
