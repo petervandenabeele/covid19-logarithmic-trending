@@ -31,7 +31,13 @@ The graphs are _logarithmic_ because:
 * shows bending down when the growth rate slows down (which is what we all hope !)
 * on a linear veritcal axis, not easy to see that
 
-I am very curious (and worried also) about how the different approach the Netherlands ("herd immunity" ??) will affect these numbers and potentially overload the medical system.
+I am very curious (and worried also) about how the different approach the Netherlands ("herd immunity" ??) will affect these numbers.
+
+An UPDATE since 2020-03-25 is that for BELGIUM, I now also show the _total number of admitted_ people in hospital. That is the _current_ number of people in hospital + the number of people _discharged_. Otherwise said, all people that have ever been admitted to hospital (some of them are discharged by now).
+
+My motivations to use the total number of admitted people in BELGIUM is:
+* to look more at the INFLUX into the hospitals as a less-biased indicator of the growth of the viral infections in the population.
+* to allow more correct comparison with NETHERLANDS ; in the Netherlands, the number that is reported is: "Het totaal aantal gemelde patiënten opgenomen (geweest) in het ziekenhuis: NNNN"
 
 ## CAVEAT: About the *trendline*
 
@@ -40,8 +46,6 @@ The trendline *IS NOT A PREDICTION*. It is just a trendline that reasonably well
 Again, for clarity, both the 1-order (LINEAR) polynomials and the 2-order (QUADRATIC) polynomials are way too simple to describe the complex behavior for anything more then a short extrapolation. So, do not use this as a prediction ... maybe use as a possible trend for the next days.
 
 So, I _hope_ the trendline can be somewhat of a useful indicator for the next days ?? But, "hope is not a strategy".
-
-Also, I am not plotting the number of deceased people here. That graph shows a very different evolution (much faster relative growth at this moment)!
 
 ## Data source
 
