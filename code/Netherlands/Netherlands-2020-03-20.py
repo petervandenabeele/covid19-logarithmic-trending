@@ -53,7 +53,7 @@ plt.plot(day_of_march_ICU, ICU, 's-', label="ICU")
 
 trend = [pow(2, x) for x in lin2.predict(poly.fit_transform(X_))]
 
-plt.plot(X_, trend, color = 'blue', dashes=[2, 4], label="hospitlisations trendline")
+plt.plot(X_, trend, color = 'blue', dashes=[2, 4], label="hospitalisations trendline")
 
 # trendline_dates = X_ # use this to see all trendline values, also in the past
 trendline_dates = [[20],[21],[22],[23],[24]]
