@@ -8,11 +8,11 @@ As a compromise, I am now showing LINEAR and QUADRATIC trend lines, based on the
 
 ## Belgium
 
-![covid19-log-hospital-admissions-belgium](./images/covid19-log-belgium-2020-03-25.png "covid19 log hospital admissions belgium")
+![covid19-log-hospital-admissions-belgium](./images/covid19-log-belgium-2020-03-28.png "covid19 log hospital admissions belgium")
 
 ## Netherlands
 
-![covid19-log-hospital-admissions-netherlands](./images/covid19-log-netherlands-2020-03-25.png "covid19 log hospital admissions netherlands")
+![covid19-log-hospital-admissions-netherlands](./images/covid19-log-netherlands-2020-03-26.png "covid19 log hospital admissions netherlands")
 
 Please collaborate with comments, PR, forked Notebooks.
 
