@@ -12,7 +12,7 @@ As a compromise, I am now showing LINEAR and QUADRATIC trend lines, based on the
 
 ## Netherlands
 
-![covid19-log-hospital-admissions-netherlands](./images/covid19-log-netherlands-2020-03-26.png "covid19 log hospital admissions netherlands")
+![covid19-log-hospital-admissions-netherlands](./images/covid19-log-netherlands-2020-03-28.png "covid19 log hospital admissions netherlands")
 
 Please collaborate with comments, PR, forked Notebooks.
 
@@ -21,19 +21,17 @@ Please collaborate with comments, PR, forked Notebooks.
 The reasons for these graphs are:
 
 * number of _confirmed cases_ are by definition an underestimation and are dependent on testing _policy_ !
-* number of hospitalisations and ICU admissions is far less dependent on policy and also has a much harder real-world impact.
+* the number of hospitalisations and ICU admissions is far less dependent on policy and also has a much harder real-world impact.
 
 The graphs are _logarithmic_ because:
 
 * initially, I assume there is exponential growth ("viral")
-* what is the rate of growth (e.g. doubling time) ? (typical numbers on EU graphs now is 2.2 days)
+* what is the rate of growth (e.g. doubling time) ? (worst case number are between 2 and 3 days)
 * plotting on _log_ scale shows this as a _straight line_
-* shows bending down when the growth rate slows down (which is what we all hope !)
-* on a linear veritcal axis, not easy to see that
+* in optimistic scenario, should show a bending down when the growth rate slows down
+* on a linear veritcal axis, not easy to see that that "relative slow down"
 
-I am very curious (and worried also) about how the different approach the Netherlands ("herd immunity" ??) will affect these numbers.
-
-An UPDATE since 2020-03-25 is that for BELGIUM, I now also show the _total number of admitted_ people in hospital. That is the _current_ number of people in hospital + the number of people _discharged_. Otherwise said, all people that have ever been admitted to hospital (some of them are discharged by now).
+An UPDATE since 2020-03-25 is that for BELGIUM, I now also show the _total number of admitted_ people in hospital. That is the _current_ number of people in hospital + the number of people _discharged_. Otherwise said, all people that have ever been admitted to hospital (some of them are discharged by now). I am not entirely sure if this is complete. What about people that deceased in hospital? What is the exact meaning of "new people admitted to hospital" (it is not high enough to account for growth of people current in hospital + discharges ?)?
 
 My motivations to use the total number of admitted people in BELGIUM is:
 * to look more at the INFLUX into the hospitals as a less-biased indicator of the growth of the viral infections in the population.
@@ -41,7 +39,7 @@ My motivations to use the total number of admitted people in BELGIUM is:
 
 ## CAVEAT: About the *trendline*
 
-The trendline *IS NOT A PREDICTION*. It is just a trendline that reasonably well matches the data. I am using only the most recent 7 data points (1 week), because the dynamics will change over time, as a result of changing social behaviors and because of rules imposed by governments.
+The trendline *IS NOT A PREDICTION*. It is just a trendline that reasonably well matches the data on short term. I am using only the most recent 7 data points (1 week), because the dynamics will change over time, as a result of changing social behaviors and because of rules imposed by governments.
 
 Again, for clarity, both the 1-order (LINEAR) polynomials and the 2-order (QUADRATIC) polynomials are way too simple to describe the complex behavior for anything more then a short extrapolation. So, do not use this as a prediction ... maybe use as a possible trend for the next days.
 
@@ -49,9 +47,9 @@ So, I _hope_ the trendline can be somewhat of a useful indicator for the next da
 
 ## Data source
 
-For Belgium, the source of the data is the daily official press release around 11:00 am that gives these numbers for Belgium.
+For Belgium, the source of the data is the daily official press release around 11:00 am that gives these numbers for Belgium. These are reported i.a. on destandaard.be and vrt news liveblog like https://www.vrt.be/vrtnws/nl/2020/03/27/liveblog-28-maart/
 
-For Netherlands, I mention some sources in the /data directory. Mainly the NOS and nu.nl "Liveblog Corona".
+For Netherlands, I mention some sources in the /data directory. Mainly RIVM https://www.rivm.nl/nieuws/actuele-informatie-over-coronavirus and for ICU https://stichting-nice.nl/
 
 ## Contributors
 
