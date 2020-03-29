@@ -2,9 +2,26 @@
 
 First Notebook is on https://colab.research.google.com/drive/1O7kH5sxu36atNYDavtEuw4Vw8Wq0SpUW
 
-First plots of these data are on https://twitter.com/peter_v around 18, 19, 20 March 2020. Some of the initial plots with only QUADRATIC trend lines where far too optimistic for the trendline :-/ . I received feedback to not show trendlines or at least use LINEAR trendlines.
+## Call to ACTION
 
-As a compromise, I am now showing LINEAR and QUADRATIC trend lines, based on the most recent 7 days.
+One thing we ALL can DO is this:
+
+
+CALL A  **HOME ALONE**  PERSON TODAY !
+
+
+Let's all contrast the #PhysicalDistancing with massive #SocialConnection and support those that
+may feel lonely because of the #PhysicalDistancing measures.
+
+And besided the "good deed", it may even make the Physical Distancing more effective: lonely people that
+feel the Social Connection, may find it slightly less hard to obeye the harsh Physical Distancing rules.
+
+Yes, I understand this is an investment of your time and attention, away from the cosy feeling at your
+home, but please consider the people that are really "Home Alone" now.
+
+I suggest that besided reporting the 11:00 am cold clinical numbers, at 8:00 pm, around the time we
+applaud for the health care workers, we also report how many people we have called today with the
+warm tag #SocialConnection.
 
 ## Belgium
 

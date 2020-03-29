@@ -97,7 +97,7 @@ plt.plot(day_of_march, deceased, 's-', color = 'C2', label="deceased")
 
 plt.xlabel("day of March")
 plt.ylabel("Total numbers")
-plt.title(f"NEW VERSION: hospitalisations that WHERE admitted and current\n{country} hosp. admitted and current, ICU, deceased on {current_day} March\nThe trendlines ARE NOT PREDICTIONS ! ")
+plt.title(f"\n* CALL TO ACTION * : Call a HOME ALONE person today ! #SocialConnection #PhysicalDistancing\n\n{country} hosp. admitted and current, ICU, deceased on {current_day} March\nThe trendlines ARE NOT PREDICTIONS ! ")
 plt.legend()
 plt.grid()
 plt.show()
