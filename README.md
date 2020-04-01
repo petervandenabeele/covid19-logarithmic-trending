@@ -75,3 +75,4 @@ For Netherlands, I mention some sources in the /data directory. Mainly RIVM http
 * A nicer version of the graph was made by Maarten Lambrechts (https://twitter.com/maartenzam)
 * Interesting feedback to use LINEAR trend line (or none!) was received from Arnout Devos (https://github.com/ArnoutDevos), Pierre DB and Kris Peeters
 * Pull Request for grid lines by Arnout Devos (https://github.com/ArnoutDevos)
+* Pull Request for retro-active correction on number of deceased people by Jan Veldeman (https://twitter.com/janveldeman)
