@@ -25,7 +25,7 @@ warm tag #SocialConnection.
 
 ## Belgium
 
-![covid19-log-hospital-admissions-belgium](./images/covid19-log-belgium-2020-03-31.png "covid19 log hospital admissions belgium")
+![covid19-log-hospital-admissions-belgium](./images/covid19-log-belgium-2020-04-01.png "covid19 log hospital admissions belgium")
 
 ## Netherlands
 
