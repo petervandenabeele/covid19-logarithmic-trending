@@ -56,7 +56,7 @@ first_future_day = current_day + 1
 trendline_dates = [[x] for x in range(first_future_day, first_future_day + extrapolation_days)]
 X_ = X + trendline_dates
 y = log2_hosp[-previous_days:]
-print(f"Days of March:               {trendline_dates}")
+print(f"Days of April:               {[(x[0] - 31) for x in trendline_dates]}")
 
 # linear (degree 1)
 poly_1 = PolynomialFeatures(degree = 1)
@@ -103,7 +103,7 @@ plt.plot(day_of_march, deceased, 's-', color = 'C2', label="deceased ALL")
 
 plt.xlabel("days since begin March")
 plt.ylabel("Total numbers")
-plt.title(f"\n* CALL TO ACTION * : Call a HOME ALONE person today ! #SocialConnection #PhysicalDistancing\n\n{country} hosp. admitted and current, ICU, deceased on {current_day} March\nThe trendlines ARE NOT PREDICTIONS ! ")
+plt.title(f"\n* CALL TO ACTION * : Call a HOME ALONE person today ! #SocialConnection #PhysicalDistancing\n\n{country} hosp. admitted and current, ICU, deceased on {(current_day - 31)} April\nThe trendlines ARE NOT PREDICTIONS ! ")
 plt.legend()
 plt.grid()
 plt.show()
